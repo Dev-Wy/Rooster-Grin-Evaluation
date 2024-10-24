@@ -1,0 +1,88 @@
+/***Header***/
+.hero-section {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 60px;
+}
+.hero-section img {
+    width:80px;
+    padding-left: 30px;
+}
+h1 h2 {
+    color:white;
+}
+h2 {
+    padding-top: 30px;
+}
+.hero-section button {
+    background-color:#995ba1 important!;
+    border: none;
+    margin: 0;
+    position: absolute;
+    left: 32%;     
+}
+/***Main***/
+/***connect***/
+.connect .card-body {
+    padding: 20px 0px 0px 20px;
+}
+.connect .card-title {
+    color:rgb(86, 53, 99);
+}
+.connect .card-text-2 {
+    color:rgb(86, 53, 99);
+}
+/***log-in***/
+.log-in {
+    background-image: url('../img/banner-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:50px;
+}
+.log-in .col {
+    padding-left:30px;
+}
+button {
+    background-color: #ec7820 !important;
+    color: white;
+    border: none;
+}
+/***features***/
+.features .row {
+    padding:50px 20px 50px 20px;
+}
+.features img {
+    width: 50px;
+    padding:10px;
+    margin:10px;
+    border: .5px solid rgb(86, 53, 99);
+    border-radius: 30px;
+}
+/***customers***/
+.customers {
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.customers .row {    
+    padding: 50px 20px 50px 20px;
+}
+/***reviews***/
+.reviews .row {
+    padding:50px 20px 50px 20px;
+}
+
+.reviews p {
+    padding-right: 50px;
+}
+/***Footer***/
+footer {
+    text-align: center;
+    margin:30px;
+}
+footer img {
+    width: 30px;
+    margin: 10px;
+}
