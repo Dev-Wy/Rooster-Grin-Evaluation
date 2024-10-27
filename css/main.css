@@ -1,4 +1,4 @@
-/***Header***/
+/***HEADER***/
 .hero-section {
     background-image: url('../img/hero.jpg');
     background-size: cover;
@@ -7,7 +7,7 @@
     padding-bottom: 60px;
 }
 .hero-section img {
-    width:80px;
+    width:100px;
     padding-left: 30px;
 }
 h1 h2 {
@@ -17,41 +17,46 @@ h2 {
     padding-top: 30px;
 }
 .hero-section button {
-    background-color:#995ba1 important!;
     border: none;
     margin: 0;
     position: absolute;
     left: 32%;     
 }
-/***Main***/
-/***connect***/
-.connect .card-body {
-    padding: 20px 0px 0px 20px;
+
+/***MAIN***/
+
+/***ELEVATE***/
+#elevate .half-width-1 {
+    padding: 20px 0px 0px 30px;
 }
-.connect .card-title {
-    color:rgb(86, 53, 99);
+#elevate .half-width-2 img{
+    width:100%;
 }
-.connect .card-text-2 {
-    color:rgb(86, 53, 99);
-}
-/***log-in***/
-.log-in {
+
+/***ONLINE***/
+#online {
     background-image: url('../img/banner-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    padding:50px;
+    padding: 50px 0px 50px 30px;
 }
-.log-in .col {
-    padding-left:30px;
-}
+
 button {
     background-color: #ec7820 !important;
     color: white;
     border: none;
 }
-/***features***/
+
+/***FEATURES***/
 .features .row {
     padding:50px 20px 50px 20px;
+}
+.features .row-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
 }
 .features img {
     width: 50px;
@@ -60,24 +65,31 @@ button {
     border: .5px solid rgb(86, 53, 99);
     border-radius: 30px;
 }
-/***customers***/
-.customers {
+
+/***CUSTOMERS***/
+#customers {
     background-image: url('../img/banner-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-.customers .row {    
+#customers .text {    
+    display:block;
+    width: 35%;
     padding: 50px 20px 50px 20px;
 }
-/***reviews***/
+
+/***REVIEWS***/
 .reviews .row {
     padding:50px 20px 50px 20px;
 }
-
+.reviews .carousel-item {
+    width: 85%;
+}
 .reviews p {
     padding-right: 50px;
 }
-/***Footer***/
+
+/***FOOTER***/
 footer {
     text-align: center;
     margin:30px;
@@ -86,3 +98,107 @@ footer img {
     width: 30px;
     margin: 10px;
 }
+
+/*--------TABLET--------*/
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+/*Tablet Styles Here*/
+    #elevate .full-width {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    #elevate .half-width {
+        flex-basis: 50%;
+        padding: 50px 30px 75px 30px;
+    }
+    #elevate .half-width {
+        width: 100%;
+    }
+)
+
+/*---------- DESKTOP ----------*/
+
+@media only screen and (min-width: 1200px) {
+/*Desktop Styles Here*/   
+}
+
+/*---------- PRINT ------------*/
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
