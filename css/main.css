@@ -13,6 +13,21 @@
 h1 h2 {
     color:white;
 }
+h1 {
+  animation: slide-left 3s ease-in 0s 1 normal forwards;
+}
+@keyframes slide-left {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+ 
 h2 {
     padding-top: 30px;
 }
@@ -64,7 +79,12 @@ button {
     margin:10px;
     border: .5px solid rgb(86, 53, 99);
     border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+.features img:hover {
+    transform: scale(1.1);
 }
+
 
 /***CUSTOMERS***/
 #customers {
