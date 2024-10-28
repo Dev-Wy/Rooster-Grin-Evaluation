@@ -1,12 +1,17 @@
 /***HEADER***/
-.hero-section {
+#hero {
     background-image: url('../img/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    color:#fff;
     padding-bottom: 60px;
 }
-.hero-section img {
+
+#hero .text{
+    text-align: center;
+}
+#hero img {
     width:100px;
     padding-left: 30px;
 }
@@ -31,11 +36,8 @@ h1 {
 h2 {
     padding-top: 30px;
 }
-.hero-section button {
-    border: none;
-    margin: 0;
-    position: absolute;
-    left: 32%;     
+#hero button {
+    border: none;  
 }
 
 /***MAIN***/
@@ -55,7 +57,9 @@ h2 {
     background-repeat: no-repeat;
     padding: 50px 0px 50px 30px;
 }
-
+#online .full-width{
+    color: #4c1074;
+}
 button {
     background-color: #ec7820 !important;
     color: white;
@@ -79,18 +83,18 @@ button {
     margin:10px;
     border: .5px solid rgb(86, 53, 99);
     border-radius: 30px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s;
   }
 .features img:hover {
     transform: scale(1.1);
 }
-
 
 /***CUSTOMERS***/
 #customers {
     background-image: url('../img/banner-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    color: #4c1074;
 }
 #customers .text {    
     display:block;
@@ -122,19 +126,39 @@ footer img {
 /*--------TABLET--------*/
 @media only screen and (min-width: 768px) and (max-width: 1199px){
 /*Tablet Styles Here*/
-    #elevate .full-width {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-    }
-    #elevate .half-width {
-        flex-basis: 50%;
-        padding: 50px 30px 75px 30px;
-    }
-    #elevate .half-width {
+/*** TABLET HEADER***/
+    .hero-section {
+        background-image: url('../img/hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding-bottom: 80px;
         width: 100%;
     }
-)
+    .hero-section img {
+        width:150px;
+        padding-left: 30px;
+    }
+    .hero-section button {
+        display:flex;
+        justify-content: center;
+    }
+/*** TABLET ELEVATE***/
+    #elevate .full-width {
+        display: flex;
+        justify-content: left;
+        flex-flow: row wrap;
+    }
+    #elevate .half-width-1 {
+        flex-basis: 50%;
+        padding: 50px 30px 75px 60px;
+    }
+    #elevate .half-width-2 {
+        width: 50%;
+    }
+}  
+/*** TABLET ONLINE***/
+    
 
 /*---------- DESKTOP ----------*/
 
