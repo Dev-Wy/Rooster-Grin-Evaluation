@@ -1,3 +1,4 @@
+/*********** NEXT: alight text to right************/
 /***HEADER***/
 #hero {
     background-image: url('../img/hero.jpg');
@@ -12,7 +13,7 @@
     text-align: center;
 }
 #hero img {
-    width:100px;
+    width:30%;
     padding-left: 30px;
 }
 h1 h2 {
@@ -67,25 +68,25 @@ button {
 }
 
 /***FEATURES***/
-.features .row {
+#features .row {
     padding:50px 20px 50px 20px;
 }
-.features .row-items {
+#features .row-items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     text-align: center;
 }
-.features img {
+#features img {
     width: 50px;
     padding:10px;
     margin:10px;
     border: .5px solid rgb(86, 53, 99);
     border-radius: 30px;
-    transition: transform 0.3s;
+    transition: 0.3s ease-in-out;
   }
-.features img:hover {
+#features img:hover {
     transform: scale(1.1);
 }
 
@@ -98,18 +99,18 @@ button {
 }
 #customers .text {    
     display:block;
-    width: 35%;
-    padding: 50px 20px 50px 20px;
+    width: 40%;
+    padding: 50px 20px 50px 30px;
 }
 
 /***REVIEWS***/
-.reviews .row {
+#reviews .row {
     padding:50px 20px 50px 20px;
 }
-.reviews .carousel-item {
+#reviews .carousel-item {
     width: 85%;
 }
-.reviews p {
+#reviews p {
     padding-right: 50px;
 }
 
@@ -126,8 +127,8 @@ footer img {
 /*--------TABLET--------*/
 @media only screen and (min-width: 768px) and (max-width: 1199px){
 /*Tablet Styles Here*/
-/*** TABLET HEADER***/
-    .hero-section {
+/*** TABLET HEADER ***/
+    #hero {
         background-image: url('../img/hero.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -135,15 +136,8 @@ footer img {
         padding-bottom: 80px;
         width: 100%;
     }
-    .hero-section img {
-        width:150px;
-        padding-left: 30px;
-    }
-    .hero-section button {
-        display:flex;
-        justify-content: center;
-    }
-/*** TABLET ELEVATE***/
+
+/*** TABLET ELEVATE ***/
     #elevate .full-width {
         display: flex;
         justify-content: left;
@@ -151,19 +145,56 @@ footer img {
     }
     #elevate .half-width-1 {
         flex-basis: 50%;
-        padding: 50px 30px 75px 60px;
+        padding: 50px 60px 75px 130px;
     }
     #elevate .half-width-2 {
         width: 50%;
     }
 }  
-/*** TABLET ONLINE***/
-    
+/*** TABLET ONLINE ***/
+#online {
+    padding: 130px 0px 100px 130px;
+    height: 350px;
+
+}
+/*** TABLET FEATURES ***/
+#features {
+    padding-top: 80px; 
+    height:350px;
+}
+#features .row{
+    padding-bottom: 130px;
+}
+/*** TABLET CUSTOMERS ***/
+/*********** NEXT: alight text to right************/
+#customers .full-width {
+    display: flex;
+
+}
+#customers .text { 
+    width: 40%;
+    padding: 120px 130px 100px 0px;
+    height: 350px;
+    text-align: right;
+}
 
 /*---------- DESKTOP ----------*/
 
 @media only screen and (min-width: 1200px) {
-/*Desktop Styles Here*/   
+/*Desktop Styles Here*/ 
+/*** DESKTOP ELEVATE ***/
+#elevate .full-width {
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+}
+#elevate .half-width-1 {
+    flex-basis: 50%;
+    padding: 50px 30px 75px 60px;
+}
+#elevate .half-width-2 {
+    width: 50%;
+}
 }
 
 /*---------- PRINT ------------*/
