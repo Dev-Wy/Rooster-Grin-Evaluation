@@ -7,7 +7,7 @@ The goal of this project is to create a client website that has some key feature
 ##
 1. I used HTML, CSS, and Boostrap 5 with limited JS.
 
-2. I had not had previous experience with animations or transitions. I learned a great deal. The biggest struggle was time. I will enjoy tinkering on this project in the future.
+2. I had not had previous experience with animations or transitions. I learned a great deal. I will enjoy tinkering on this project in the future.
 
 3. I really enjoyed working with Bootstrap 5 again and had a great time making the carousel. Using animations and trying my hand at transitions was quite inspiring. However, I mainly enjoyed the excuse to code.
 
