@@ -40,12 +40,12 @@
 
 ### Useful Resources: 
 - Font Awesome: https://fontawesome.com/
--Rooster Grin: https://www.roostergrin.com/
+- Rooster Grin: https://www.roostergrin.com/
 
 ## Author
 - Jake Wyant
 - Portfolio: https://dev-wy.github.io/Portfolio/
--LinkedIn: https://www.linkedin.com/in/jakewyantdeveloper/
+- LinkedIn: https://www.linkedin.com/in/jakewyantdeveloper/
 ## Acknowledgments
 - Thank you to Rooster Grin for allowing me the opportunity to take your Evaluation and practice my coding skills.
 - Special thanks to Skillcrush for giving me the foundation to build on.
