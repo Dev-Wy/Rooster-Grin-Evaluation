@@ -159,12 +159,27 @@ footer img {
 }
 /*** TABLET FEATURES ***/
 #features {
-    padding-top: 80px; 
-    height:350px;
+    padding-top: 10px; 
 }
-#features .row{
-    padding-bottom: 130px;
+#features .col{
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
+#features .row-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+#features .item{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+}
+
 /*** TABLET CUSTOMERS ***/
 /*********** NEXT: alight text to right************/
 #customers .full-width {
