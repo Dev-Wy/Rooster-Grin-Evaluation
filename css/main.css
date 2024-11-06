@@ -181,18 +181,16 @@ footer img {
 }
 
 /*** TABLET CUSTOMERS ***/
-/*********** NEXT: alight text to right************/
 #customers .full-width {
     display: flex;
-
 }
 #customers .text { 
-    width: 40%;
-    padding: 120px 130px 100px 0px;
+    width: 100%;
+    padding: 120px 130px 100px 450px;
     height: 350px;
     text-align: right;
 }
-
+#reviews .col-sm
 /*---------- DESKTOP ----------*/
 
 @media only screen and (min-width: 1200px) {
