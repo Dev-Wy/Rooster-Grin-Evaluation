@@ -239,26 +239,85 @@ footer img {
     }
     /*** TABLET REVIEWS ***/
     #reviews .col-sm {
-        
+
     }
 }
 /*---------- DESKTOP ----------*/
 
 @media only screen and (min-width: 1200px) {
 /*Desktop Styles Here*/ 
+/****______ADJUST ALL TO MATCH DESKTOP_____****/
+/*** DESKTOP HEADER ***/
+#hero {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-bottom: 80px;
+    width: 100%;
+}
+#hero .text {
+    padding:50px 0px;
+}
+#hero img {
+    width: 220px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
 /*** DESKTOP ELEVATE ***/
-    #elevate .full-width {
-        display: flex;
-        justify-content: left;
-        flex-flow: row wrap;
-    }
-    #elevate .half-width-1 {
-        flex-basis: 50%;
-        padding: 50px 30px 75px 60px;
-    }
-    #elevate .half-width-2 {
-        width: 50%;
-    }
+#elevate .full-width {
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+}
+#elevate .half-width-1 {
+    flex-basis: 50%;
+    padding: 50px 60px 75px 130px;
+}
+#elevate .half-width-2 {
+    width: 50%;
+}  
+/*** DESKTOP ONLINE ***/
+#online {
+    padding: 130px 0px 100px 130px;
+    height: 350px;
+
+}
+/*** DESKTOP FEATURES ***/
+#features {
+    padding-top: 10px; 
+}
+#features .col{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+#features .row-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+#features .item{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 8px;
+}
+#features .text {
+    padding: 50px 0px 75px 80px;
+}
+
+/*** DESKTOP CUSTOMERS ***/
+#customers .full-width {
+    display: flex;
+}
+#customers .text { 
+    width: 100%;
+    padding: 120px 130px 100px 600px;
+    height: 350px;
 }
 
 /*---------- PRINT ------------*/
