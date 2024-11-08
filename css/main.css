@@ -70,10 +70,11 @@ h2 {
 
 /***ELEVATE***/
 #elevate .half-width-1 {
-    padding: 20px 0px 0px 30px;
+    padding: 40px 0px 30px 30px;
 }
 #elevate .half-width-2 img {
     width:100%;
+    display: none;
 }
 #elevate h3 {
     color:#4c1074;
@@ -140,16 +141,20 @@ button {
 
 /***REVIEWS***/
 #reviews .row {
-    padding:50px 20px 50px 20px;
+    padding:50px 20px 50px 0px;
+}
+#reviews .col-sm {
+    padding: 20px;
+}
+#reviews .text {
+    padding-left: 30px;
 }
 #reviews .carousel-item {
-    width: 85%;
+    width: 95%;
 }
-#reviews h4  {
+#reviews h6  {
     color:#4c1074;
-}
-#reviews p {
-    padding-right: 50px;
+    text-align: center;
 }
 
 /***FOOTER***/
@@ -196,11 +201,15 @@ footer img {
     #elevate .half-width-2 {
         width: 50%;
     }  
+    #elevate .half-width-2 img {
+        width:100%;
+        display:block;
+    }
+
 /*** TABLET ONLINE ***/
     #online {
         padding: 130px 0px 100px 130px;
         height: 350px;
-<<<<<<< HEAD
 
     }
     /*** TABLET FEATURES ***/
@@ -319,67 +328,6 @@ footer img {
     width: 100%;
     padding: 120px 130px 100px 600px;
     height: 350px;
-=======
-
-    }
-    /*** TABLET FEATURES ***/
-    #features {
-        padding-top: 10px; 
-    }
-    #features .col{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-    }
-    #features .row-items{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: row wrap;
-        text-align: center;
-    }
-    #features .item{
-        display: block;
-        text-align: center;
-        padding: 10px;
-        margin: 8px;
-    }
-    #features .text {
-        padding: 50px 0px 75px 80px;
-    }
-
-    /*** TABLET CUSTOMERS ***/
-    #customers .full-width {
-        display: flex;
-    }
-    #customers .text { 
-        width: 100%;
-        padding: 120px 130px 100px 500px;
-        height: 350px;
-    }
-    /*** TABLET REVIEWS ***/
-    #reviews .col-sm {
-        
-    }
-}
-/*---------- DESKTOP ----------*/
-
-@media only screen and (min-width: 1200px) {
-/*Desktop Styles Here*/ 
-/*** DESKTOP ELEVATE ***/
-    #elevate .full-width {
-        display: flex;
-        justify-content: left;
-        flex-flow: row wrap;
-    }
-    #elevate .half-width-1 {
-        flex-basis: 50%;
-        padding: 50px 30px 75px 60px;
-    }
-    #elevate .half-width-2 {
-        width: 50%;
-    }
->>>>>>> b05c1c698741e9199b15a942898afc017d2d6452
 }
 
 /*---------- PRINT ------------*/
@@ -460,5 +408,5 @@ footer img {
       page-break-after: avoid;
     }
   }
-  
+}
   
