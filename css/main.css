@@ -32,7 +32,6 @@ h1 h2 {
 	}
 }
 #hero h2 {
-
     padding-top: 30px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
@@ -92,10 +91,36 @@ h1 h2 {
 #online .full-width {
     color: #4c1074;
 }
+#online h2 {
+    animation: fade ease 8s 1 forwards;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+    60% {
+        opacity:0;
+    }
+	100% {
+		opacity: 1;
+	} 
+}
 button {
     background-color: #ec7820;
     color: white;
     border: none;
+    animation: fade ease 8s 1 forwards;
+}
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+    60% {
+        opacity:0;
+    }
+	100% {
+		opacity: 1;
+	} 
 }
 
 /***FEATURES***/
@@ -134,7 +159,18 @@ button {
     display:block;
     width: 40%;
     padding: 50px 20px 50px 30px;
-}
+    animation: slide-left 6s ease-in 1s 1 normal forwards;
+  }
+  @keyframes slide-left {
+      0% {
+          opacity: 0;
+          transform: translateX(250px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
 #customers h2 {
     color: #4c1074;
 }
@@ -207,7 +243,18 @@ footer img {
     #elevate .half-width-2 img {
         width:100%;
         display:block;
-    }
+        animation: slide-left 4s ease-in 1s 1 normal forwards;
+      }
+      @keyframes slide-left {
+          0% {
+              opacity: 0;
+              transform: translateX(250px);
+          }
+          100% {
+              opacity: 1;
+              transform: translateX(0);
+          }
+      }
 
 /*** TABLET ONLINE ***/
     #online {
